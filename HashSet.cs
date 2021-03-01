@@ -18,5 +18,22 @@ public class Program
         foreach(string doge in doges) {
             Console.WriteLine(doge);
         }
+
+        string[] dogs = new string[] { "beagle", "fluffy", "westie" };
+        doges.IntersectWith(dogs);
+		
+		Console.WriteLine("\nDoges intersected with dogs: ");
+		foreach(string doge in doges) {
+            Console.WriteLine(doge);
+        }
+		
+		string[] cats = new string[] { "bitey", "stinky" };
+		
+		doges.UnionWith(cats);
+		
+		Console.WriteLine("\nDoges union with cats: ");
+		foreach(string doge in doges) {
+            Console.WriteLine(doge);
+        }
     }
 }
